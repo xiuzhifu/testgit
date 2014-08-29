@@ -1,5 +1,5 @@
-hello:hello.o
-	cc hello.o -o hello.exe
+hello.exe:hello.o
+	cc $<  -o $@ 
 hello.o:hello.c
 clean:
-	-rm hello.exe hello.o
+	-rm -f *.o 
